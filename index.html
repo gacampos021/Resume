@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html id="html" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Campos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js"></script> </head>
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
         <nav>
             <ul>
                 <li>
-                    <button class="card-button">
+                    <button class="card-button" onclick="darkMode()">
                         <i class="fa-solid fa-moon"></i>
                     </button>
                 </li>
@@ -73,7 +74,18 @@
     </main>
 
     <footer>
-        <p>Rodapé</p>
+        <ul class="footer">
+            <li>
+                <a class="footer-button" href="https://www.linkedin.com/in/gabriel-campos-744085248/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a class="footer-button" href="https://github.com/gacampos021">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+        </ul>
     </footer>
 </body>
 </html>

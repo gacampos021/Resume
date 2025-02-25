@@ -5,6 +5,10 @@ html{
     overflow-x: hidden;
     color: antiquewhite;
 }
+html.dark-mode {
+    color: rgba(22,22,22)
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -18,6 +22,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+html.dark-mode header{
+    background-color: rgb(228, 212, 194)
 }
 
 .card-info{
@@ -37,9 +44,10 @@ header{
 h3{
     padding-top: 0;
 }
+
 ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1rem;
     gap: 1rem;
@@ -55,6 +63,9 @@ main{
     padding: 2em 0;
     margin: 0;
 }
+html.dark-mode main{
+    background-color: rgba(201, 188, 172, 0.9)
+}
 .section {
     background-color: rgba(33,33,33);
     height: 50vw;
@@ -64,6 +75,9 @@ main{
     align-items: center;
     box-shadow: 0px -8px 20px  rgb(134, 62, 29);
 }
+html.dark-mode .section{
+    background-color: rgb(189, 177, 161)
+}
 #left{
     justify-content:flex-start;
 }
@@ -72,12 +86,13 @@ main{
 }
 .section-fig{
     background-color: #000;
-    display: block;
+    display: flex;
     height: 25vw;
     min-height: 330px;
     width: 40vw;
     min-width: 330px;
     border-radius: 7%;
+    border: 3px solid rgb(134, 62, 29);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -85,12 +100,19 @@ main{
     margin: 2rem;
 }
 .section-fig:hover{
-    height: 25.2    vw;
+    height: 25.2vw;
     min-height: 330px;
     width: 40.5vw;
     min-width: 330px;
-    
+    box-shadow: 4px 4px 20px  rgb(134, 62, 29);
 }
+#left .section-fig:hover{
+    box-shadow: 4px 4px 20px  rgb(134, 62, 29);
+}
+#right .section-fig:hover{
+    box-shadow: -4px 4px 20px  rgb(134, 62, 29);
+} 
+
 #bitcoin{
     background-image: url('bitcoin.png');
 }
@@ -114,6 +136,10 @@ h1{
     height: 1px;
     box-shadow: 0px 3px 10px 1px rgb(253, 253, 253);
 }
+html.dark-mode .line{
+    background-color: rgba(22,22,22);
+    box-shadow: 0px 3px 10px 1px  rgb(134, 62, 29);
+}
 .h1-section{
     margin: 0;
     padding-bottom: 1rem;
@@ -133,6 +159,8 @@ h1{
 .dropdown {
     position: relative;
     display: inline-block;
+
+    display: none;
 }
   
 .dropbtn {
@@ -183,13 +211,50 @@ h1{
     border: none;
     color:antiquewhite;
     border-radius: 50%;
+    padding: .5rem;
 }
 .card-button:hover{
-    font-size: 1.8rem;
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
+    cursor: pointer;
+}
+html.dark-mode .card-button{
+    color: rgb(22,22,22)
+}
+html.dark-mode .card-button:hover{
+    background-color: rgba(22,22,22, .3)
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    padding:0;
+    margin:0;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: antiquewhite;
+    height: 3.5%;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    align-items:center;
+    gap: 1rem;
+    list-style: none;
+    margin:0;
+}
+.footer-button{
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
     color:antiquewhite;
-    padding: .5rem;
+    border-radius: 50%;
+    padding: 3px;
+}
+.footer-button:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
