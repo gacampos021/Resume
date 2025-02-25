@@ -79,7 +79,7 @@ main{
     box-sizing: border-box;
 }
 #bitcoin{
-    background-image: url('/bitcoin.png');
+    background-image: url('bitcoin.png');
 }
 img{
     display: block;
