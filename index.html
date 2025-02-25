@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Campos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -16,19 +17,29 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
+                <li>
+                    <button class="card-button">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">Opção 1</a>
+                          <a href="#">Opção 2</a>
+                          <a href="#">Opção 3</a>
+                        </div>
+                      </div>
+                </li>
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="section" id="left">
-            <a href="https://www.kaggle.com/code/gabrielcampos1910/bitcoin-x-ethereum">
-                <figure class="section-fig" id="bitcoin">
-               </figure>
-            </a>
-           <div class="section-info">
+            <a class="section-fig" id="bitcoin" href="https://www.kaggle.com/code/gabrielcampos1910/bitcoin-x-ethereum"></a>
+            <div class="section-info">
                 <h1 class="h1-section">
                     <a href="https://www.kaggle.com/code/gabrielcampos1910/bitcoin-x-ethereum" class="h1-link">Bitcoin x Ethereum - Data Anlisys Project</a>
                     <div class="line"></div>
@@ -37,7 +48,7 @@
                     Subsequently, I conducted an analysis of prices, identifying several interesting relationships.
                 </p>
                 <a href="">More information about the project.</a>
-           </div>
+            </div>
         </div>
 
         <div class="section" id="right">
@@ -49,6 +60,7 @@
 
            </figure>
         </div>
+
         <div class="section" id="left">
             <figure class="section-fig">
 
