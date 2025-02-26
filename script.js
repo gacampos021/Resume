@@ -7,6 +7,11 @@ colorDark={
 }
 
 let html = document.getElementById('html');
+let rightCard = document.getElementById('right')
+
+function mobileCard(){
+    rightCard.classList.toggle('card');
+}
 
 function darkMode(){
     html.classList.toggle("dark-mode");

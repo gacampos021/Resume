@@ -123,7 +123,7 @@ html.dark-mode .section{
     justify-content:flex-end;
     padding-right: 3rem;
 }
-.section-fig{
+.section-fig, .section-fig-right, .section-fig-mob{
     background-color: #000;
     display: flex;
     height: 25vw;
@@ -138,7 +138,10 @@ html.dark-mode .section{
     box-sizing: border-box;
     margin: 2rem;
 }
-.section-fig:hover{
+.section-fig-mob{
+    display: none;
+}
+.section-fig:hover, .section-fig-right:hover{
     height: 25.2vw;
     min-height: 330px;
     width: 40.5vw;
@@ -328,6 +331,12 @@ html.dark-mode #sun{
 }
 
 @media screen and (max-width: 900px) {
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        max-width: 420px;
+    }
     .menu{
         display: none;
     }
@@ -364,26 +373,39 @@ html.dark-mode #sun{
     .section, #left, #right{
         display: flex;
         flex-direction: column;
-        height: 45vh;
+        height: 55vh;
         padding: 0%;
+        justify-content: start;
         margin: 0%;
     }
-    .section-fig{
+    footer{
+        position: fixed;
+        width: 100vw;
+        top: 780px;
+        bottom: 0;
+    }
+    .section-fig,  .section-fig-mob{
         margin: 0%;
         border: none;
         border-radius: 0%;
         min-height: 60%;
+        width: 100%;
     }
-    .section-info{
+    .section-fig-right{
+        display:none;
+    }
+    .section-fig-mob{
+        display: block;
+        
+    }
+    .section-info, #info-right{
         justify-content: space-around;
         align-items: center;
         min-height: 20%;
         padding: 1rem;
+        text-align: center;
     }
     .info{
         display: none;
-    }
-    .section-fig{
-        width: 100%;
     }
 }
