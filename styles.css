@@ -4,12 +4,14 @@ html{
     box-sizing: border-box;
     overflow-x: hidden;
     color: antiquewhite;
+    height: 100%;
 }
 html.dark-mode {
     color: rgba(22,22,22)
 }
 
 body{
+    height: 100%;
     padding: 0;
     margin: 0;
     font-size: 1rem;
@@ -22,6 +24,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 html.dark-mode header{
     background-color: rgb(228, 212, 194)
@@ -86,6 +89,9 @@ html.dark-mode .menu-sticky{
     width: 45%;
     font-weight:bold;
     white-space: nowrap;
+}
+.menu li:hover{
+    border-bottom: #f1f1f1 solid 1px;
 }
 html.dark-mode .menu li{
     color: rgb(0, 0, 0);
@@ -284,6 +290,7 @@ footer{
     color: antiquewhite;
     height: 3.5%;
     width: 100%;
+    overflow: hidden;
 }
 .footer{
     display: flex;
@@ -317,6 +324,9 @@ html.dark-mode #moon{
 html.dark-mode #sun{
     display: none;
 }
+.burguer{
+    display: none;
+}
 
 @media screen and (max-width: 1200px) {
     .info{
@@ -331,14 +341,36 @@ html.dark-mode #sun{
 }
 
 @media screen and (max-width: 900px) {
-    html{
-        overflow-x: hidden;
-    }
     body{
-        max-width: 420px;
+        min-height: 100vh;
+        height: auto;
+    }
+    .menu-sticky{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        right: 0;
+        width: 35%;
+        bottom:0;
+        display: none;
     }
     .menu{
-        display: none;
+
+        bottom: 0;
+        padding-right: 8rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 1rem;
+        align-items: center;
+        background: rgba(0,0,0,0.8);
+    }
+    .menu-sticky.hidden {
+        display: flex;
     }
     header{
         font-size: .8rem;
@@ -351,13 +383,23 @@ html.dark-mode #sun{
     }
     .card-info{
         width: 0%;
-        display: block;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
         flex-direction: column;
         justify-self: center;
         align-items: center;
     }
     .card-button{
         display: none;
+    }
+    .burger{
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        border: none;
+        background-color: transparent;
+        color:antiquewhite;
+        font-size: 1.8rem;
     }
     h3{
         display: none;
@@ -367,13 +409,15 @@ html.dark-mode #sun{
     }
     main{
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: start;
+        min-height: 100vh; /* Garante que a main ocupe pelo menos a altura da viewport */
+        height: auto;
     }
     .section, #left, #right{
         display: flex;
         flex-direction: column;
-        height: 55vh;
+        height: 70vh;
         padding: 0%;
         justify-content: start;
         margin: 0%;
@@ -381,15 +425,16 @@ html.dark-mode #sun{
     footer{
         position: fixed;
         width: 100vw;
-        top: 780px;
-        bottom: 0;
+        bottom:0px;
+        backface-visibility: hidden ;
     }
+
     .section-fig,  .section-fig-mob{
-        margin: 0%;
         border: none;
         border-radius: 0%;
         min-height: 60%;
         width: 100%;
+        margin:0;
     }
     .section-fig-right{
         display:none;
@@ -398,12 +443,20 @@ html.dark-mode #sun{
         display: block;
         
     }
-    .section-info, #info-right{
+    .section-info{
         justify-content: space-around;
         align-items: center;
         min-height: 20%;
         padding: 1rem;
+        height: auto;
         text-align: center;
+    }
+    #info-right{
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 20%;
+        padding: 1rem;
     }
     .info{
         display: none;
