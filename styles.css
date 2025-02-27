@@ -31,7 +31,7 @@ html.dark-mode header{
 }
 
 .card-info{
-    width: 27%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -45,9 +45,9 @@ html.dark-mode header{
     border-radius: 50%;
 }
 h3{
+    width: 50%;
     padding-top: 0;
 }
-
 .ul{
     display: flex;
     justify-content: space-around;
@@ -101,22 +101,71 @@ main{
     align-items: center;
     flex-direction: column;
     background-color: rgb(43, 43, 43);
-    height: 100rem;
+    height: auto;
     width: 100vw;
     padding: 2em 0;
     margin: 0;
+}
+.container-profile{
+    padding: 4rem;
+    width: 90%;
+    height: auto;
+    border-radius: 1%;
+    background-color: rgba(0, 0, 0, 0.365);
+}
+.three-li{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.three-li ul{
+    list-style: none;
+    font-size: 1.4rem;
+}
+p{
+    font-size: 2rem;
 }
 html.dark-mode main{
     background-color: rgba(201, 188, 172, 0.9)
 }
 .section {
     background-color: rgba(33,33,33);
-    height: 50vw;
+    height: auto;
     width: 100vw;
     margin: 0 0;
     display: flex;
     align-items: center;
     box-shadow: 0px -8px 20px  rgb(134, 62, 29);
+}
+.container-contact div{
+    padding-left: 4rem;
+}
+.container-contact ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-direction: column;
+}
+.container-contact li{
+    font-size: 2rem;
+}
+.container-contact i{
+    font-size: 2.2rem;
+    margin: 2rem;
+    float: left;
+}.container-contact a{
+    margin-top: 2.1rem;
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+}
+html.dark-mode .container-contact a{
+    color: #000;
+}
+.container-contact{
+    align-items: flex-start;
+    height: 100%;
 }
 html.dark-mode .section{
     background-color: rgb(189, 177, 161)
@@ -144,6 +193,22 @@ html.dark-mode .section{
     box-sizing: border-box;
     margin: 2rem;
 }
+.profile-pic{
+    background-color: #000;
+    display: flex;
+    height: 25%;
+    min-height: 330px;
+    width: 25%;
+    min-width: 330px;
+    border-radius: 7%;
+    border: 3px solid rgb(134, 62, 29);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 2rem;
+    float: left;
+}
 .section-fig-mob{
     display: none;
 }
@@ -166,6 +231,12 @@ html.dark-mode .section{
 }
 #pop{
     background-image: url('pop.gif');
+}
+#profile{
+    background-image: url('profile.jpeg');
+}
+#data-analysis{
+    background-image: url('data-analysis.png');
 }
 .section-info{
     height: 22vw;
@@ -299,6 +370,9 @@ footer{
     list-style: none;
     margin:0;
 }
+a{
+    text-decoration: none;
+}
 .footer-button{
     font-size: 1rem;
     background-color: transparent;
@@ -324,7 +398,7 @@ html.dark-mode #moon{
 html.dark-mode #sun{
     display: none;
 }
-.burguer{
+.burguer, #burguer, .test{
     display: none;
 }
 
@@ -392,6 +466,10 @@ html.dark-mode #sun{
     .card-button{
         display: none;
     }
+    .test{
+        display: block;
+    }
+   
     .burger{
         display: block;
         width: 3rem;
@@ -400,6 +478,9 @@ html.dark-mode #sun{
         background-color: transparent;
         color:antiquewhite;
         font-size: 1.8rem;
+    }
+    #burguer{
+        display: block;
     }
     h3{
         display: none;

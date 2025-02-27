@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html id="html" lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Gabriel Campos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js"></script> </head>
+</head>
+<body>
+    
+    <header>
+        <div class="card-info">
+            <h1>Gabriel Campos
+                <div class="line"></div>
+            </h1>
+            <div class="test">
+                <button class="burger" onclick="burguerMenu()">
+                    <i class="fa-solid fa-bars" id="burguer"></i>
+                </button>
+            </div>
+            <h3>WEB DEV / DATA ENTHUSIAST</h3>
+        </div>
+        <nav>
+            <ul class="ul">
+                <li>
+                    <button class="card-button" onclick="darkMode()">
+                        <i class="fa-solid fa-moon" id="moon"></i>
+                        <i class="fa-solid fa-sun" id="sun"></i>
+                    </button>
+                </li>
+                <li>
+                    <a class="card-button" href="https://www.kaggle.com/gabrielcampos1910">
+                        <i class="fa-brands fa-kaggle" title="Kaggle"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="card-button" href="https://www.linkedin.com/in/gabriel-campos-744085248/" >
+                        <i class="fa-brands fa-linkedin-in" title="LinkedIn"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="card-button" href="https://github.com/gacampos021">
+                        <i class="fa-brands fa-github" title="GitHub"></i>
+                    </a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                          <a href="#">Opção 1</a>
+                          <a href="#">Opção 2</a>
+                          <a href="#">Opção 3</a>
+                        </div>
+                      </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="menu-sticky" id="menu-sticky">
+        <ul class="menu"  id="menu">
+            <a href="/index.html" ><li>Projects</li></a>
+            <a href="/profile.html"><li>Profile<div class="line"></div></li></a>
+            <a href="/Curriculo Gabriel-en.pdf"><li>Resume</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+        </ul>
+    </div>
+
+    <main>
+        <div class="container-profile">
+            <figure class="profile-pic" id="profile">
+            </figure>
+            <h1>About me</h1>
+            <p>
+                I am Gabriel Benfatti de Campos, born in 1998 in Cuiabá-MT, Brazil. I am a dedicated professional with a passion for music and continuous learning. I play the guitar and other stringed instruments, always seeking to expand my knowledge and skills.
+            </p>
+            <h1>Education</h1>
+            <p>
+                From 2017 to 2019, I attended the Bachelor of Philosophy course at UNICAMP in Campinas-SP, but I did not complete it. Since 2021, I have been pursuing a Bachelor's degree in Computer Science at UNESP in São José do Rio Preto (IBILCE). During my undergraduate studies, I participated in the Data Analysis Laboratory - Study Group on Statistics and Quality, coordinated by Professor Adriana Barbosa. In this laboratory, I developed data treatment and cleaning strategies for further analysis (exploratory, descriptive, diagnostic, etc.) and knowledge acquisition, completing the KDD cycle.            
+            </p>
+            <h1>Professional Experience</h1>
+            <p>
+                In 2023, I began my professional career at Visum Digital, a Salesforce consultancy. As a web developer, I utilized JavaScript, HTML, CSS, and Apex to create efficient and functional solutions. I participated in projects for large companies, such as Ourofino Agronegócio and PADO (manufacturer of keys and padlocks), and was responsible for data integration with the Salesforce platform via REST API.            
+            </p>
+            <p>
+                In addition to technical development, this experience allowed me to improve essential skills such as teamwork and communication, as I participated in 2 to 3 meetings daily with clients and the internal team.
+            </p>
+            <h1>Skills</h1>
+            <div class="three-li">
+                <ul>
+                    <h3>Programming Languages:</h3>
+                    <li>Python (pandas, seborn, matplot, numpy)</li>
+                    <li>JavaScript, TypeScript, HTML, CSS</li>
+                    <li>Java, C, C++, C#</li>
+                </ul>
+                <ul>
+                    <h3>Soft Skills:</h3>
+                    <li>Objective communication</li>
+                    <li>Team work</li>
+                    <li>Huge desire to learn</li>
+                </ul>
+                <ul>
+                    <h3>Languages:</h3>
+                    <li>Portuguese (Native)</li>
+                    <li>English (Advanced)</li>
+                    <li>Spanish (Beginner)</li>
+                </ul>
+            </div>
+            <p>I am driven by curiosity and the desire to learn something new every day. Currently, I am seeking opportunities in the areas of development, data analysis, or databases. If you are looking for a determined professional who is always willing to evolve, let's talk!</p>
+        </div>
+        
+        <footer>
+            <ul class="footer">
+                <li>
+                    <a class="footer-button" href="https://www.kaggle.com/gabrielcampos1910">
+                        <i class="fa-brands fa-kaggle"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-button" href="https://www.linkedin.com/in/gabriel-campos-744085248/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-button" href="https://github.com/gacampos021">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li></li>
+            </ul>
+        </footer>
+    </main>
+    </body>
+</html>

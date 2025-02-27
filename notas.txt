@@ -1,2 +1,0 @@
-resolver no mobile #right, js assim como no dark-mode pode ser q funcione 
-para o #right
