@@ -140,27 +140,27 @@ html.dark-mode main{
 .container-contact div{
     padding-left: 4rem;
 }
-.container-contact ul{
+.container-contact .contact-list{
     list-style: none;
     display: flex;
     justify-content: space-between;
     gap: 3rem;
     flex-direction: column;
 }
-.container-contact li{
+.container-contact .li-contact{
     font-size: 2rem;
 }
-.container-contact i{
+.container-contact #i-contact{
     font-size: 2.2rem;
     margin: 2rem;
     float: left;
-}.container-contact a{
+}.container-contact .a-contact{
     margin-top: 2.1rem;
     display: flex;
     align-items: center;
     color: antiquewhite;
 }
-html.dark-mode .container-contact a{
+html.dark-mode .container-contact .a-contact{
     color: #000;
 }
 .container-contact{
@@ -225,7 +225,26 @@ html.dark-mode .section{
 #right .section-fig:hover{
     box-shadow: -4px 4px 20px  rgb(134, 62, 29);
 } 
-
+.project-img{
+    margin: 2rem 2rem 2rem .5rem;
+    padding: 0rem;
+    width: 40%;
+    height: 50vh;
+    background-color: transparent;
+    background-image: url('bitcoin.png');
+    background-size: cover;
+    float: left;
+}
+.bit-img{
+    margin: 2rem 2rem 2rem .5rem;
+    padding: 0rem;
+    width: 40%;
+    height: 50vh;
+    background-color: transparent;
+    background-image: url('comparison.png');
+    background-size: cover;
+    float: right;
+}
 #bitcoin{
     background-image: url('bitcoin.png');
 }
@@ -361,7 +380,6 @@ footer{
     color: antiquewhite;
     height: 3.5%;
     width: 100%;
-    overflow: hidden;
 }
 .footer{
     display: flex;
@@ -492,7 +510,7 @@ html.dark-mode #sun{
         display: flex;
         justify-content: center;
         align-items: start;
-        min-height: 100vh; /* Garante que a main ocupe pelo menos a altura da viewport */
+        min-height: 100vh; 
         height: auto;
     }
     .section, #left, #right{
